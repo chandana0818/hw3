@@ -3,10 +3,6 @@ class PlacesController < ApplicationController
         @places = Place.all
     end
 
-    # def show
-    #     @place = Place.find(params[:id])
-    #     redirect_to "/posts?place_id="+@place.id
-    # end
 
     def show
         @place = Place.find(params["id"])
